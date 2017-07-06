@@ -1,0 +1,22 @@
+body > header{
+		background:#ccc;
+}
+body > footer{
+		background:#ccc;
+		text-align: center;
+		padding: 5px;
+}
+#sideHeader ul li{
+display: inline-block;
+}
+#siteHeader nav{
+	display: inline-block;
+}
+main >aside{
+	float: right;
+	background: #e7ffca;
+	padding: 10px;
+}
+main>aside>a{
+	display: block;
+}
