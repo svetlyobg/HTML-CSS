@@ -40,7 +40,7 @@ nav ul li{
     display        : inline;
     padding        : 0 12px 0 12px;
 }
-nav ul li          :first-of-type a, nav ul li:last-of-type a{
+nav ul li:first-of-type a, nav ul li:last-of-type a{
     padding-left   : 0;
     color          : #0a2d4a;
     font-weight    : bold;
@@ -49,33 +49,40 @@ article{
     width: 370px;
     display: inline-block;
 }
-article img{
+main{
+    margin-top: 30px;
+}
+main > article img{
     width          : 350px;
     height         : 200px;
     margin-bottom  : 20px
 }
-article img + p    ::first-letter{
+p{
+    width: 345px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+article img + p::first-letter{
     font-family    : EucrosiaUPC sans-serif;
     text-transform : uppercase;
     font-size      : 40px;
 }
-span a{
+.readmore a, .comments a{
     background     : url(images/bg2.jpg);
     color          : #fff;
     padding        : 10px;
     margin-top     : 10px;
+    text-transform: uppercase;
 }
 footer{
     margin         : 0px;
-    padding        : 40px 0 64px 0;
+    padding        : 10px 0 10px 0;
     text-align     : center;
 }
-article p          :last-of-type span:first-of-type a::before{
+article p:last-of-type span:first-of-type a::before{
     content        : url("images/comment.png");
     position       : relative;
+    padding: 10px;
     right          : 5px;
     top            : 7px;
-}
-.comments{
-
 }
